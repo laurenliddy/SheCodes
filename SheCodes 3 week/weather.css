@@ -1,0 +1,12 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+h1 {
+    color:#1a64d6;
+    font-size: 34px;
+    line-height: 48px;
+}
+
+ul{
+    list-style-type: none;
