@@ -1,81 +1,159 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <style>
-                h1 {
-                    font-weight: 400;
-                    font-family:fantasy;
-                    font-size:50px;
-                    color:red;
-                    text-align:center;
+<html>
+	<head>
+		<style>
+            body{
+                background-image: linear-gradient(to right, rgba(112,193,179,0), rgba(112,193,179,1))
+            }
+			h1 {
+				font-weight: 400;
+				font-family: fantasy;
+				font-size: 50px;
+				color:#50514f;
+				text-align: center;
+                border:solid #FFE066;
+                padding: 20px;
+			}
+			h2 {
+				text-align: center;
+				font-family: fantasy;
+				font-size: 32px;
+				color:#f25f5c;
+			}
+            hr{
+                background-color:#FFE066;
+            }
+			.columnLeft {
+				padding-right: 30px;
+			}
+			.columnRight {
+				padding-left: 30px;
+			}
+			img {
+				display: block;
+				width: 450px;
+			}
+			.imgContainer {
+				display: flex;
+				flex-direction: row;
+				justify-content: center;
+			}
+            button{
+                margin-top: 15px;
+            }
+            .bodyContainer {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
 
+            }
+            button{
+                padding:20px;
+                color:#247ba0;
+                border-radius: 20px;
+                box-shadow: 10px 5px #50514f; 
+                border-color:#50514f;
+            }
+            button:hover{
+                color:#f25f5c;
+                background-color:#FFE066;
+                border-color: #FFE066;
+                width:200px;
+            }
+            h3{
+                line-height: 20px;
+                color:#247ba0;
+                font-size:20px;
+            }
+            p{
+                color:#50514f;
+                font-size: 15px;
+                line-height: 20px;
+            }
+            .columnLeft{
+                font-family: monospace;
+                color:#50514f;
+                font-size: 15px;
+            }
+            .columnRight{
+                font-family: monospace;
+                color:#50514f;
+                font-size:15px;
+            }
+            .hopKingdomLink{
+                border: solid #50514f;
+                padding:10px;
+                border-radius: 10px;
+                
+            }
+		</style>
+        <body>
+            <h1><em>Skateboarding</em></h1>
+            <h2>Skaters gonna Sk8</h2>
+            <hr>
 
-                }
-                h2{
-                    text-align: center;
-                    font-family: fantasy;
-                    font-size:32px;
-                    color:purple;
+            <div class="bodyContainer"> 
+                <div class="imgContainer">
+                    <div class="columnLeft">
+                        <h2>What I love</h2>
+                        <h3>The community!</h3>
+                        <p>You will always find someone willing to help you
+                        <h3> New Deck! New Trucks! New Wheels!</h3>
+                        <p>No matter how much you may love you current set up<br>
+                            you will find an excuse to get something new </p>
+                        <h3>Learning new tricks</h3>
+                        <p>As frustraing as it can be nailing a new
+                            <br>
+                        trick feels amazing and so rewarding</p>
+                        <h3>Skateparks!</h3>
+                        <p>Skateparks are of course where you find skaters
+                            <br>
+                            we all have our preferences but mine as a beginner
+                            <br>
+                            <strong>Mudchute</strong> for outdoor skating and good vibes
+                            <br>
+                            or <strong>Hop Kingdom</strong> for indoor skating and a few drinks 
+                        </p>
 
-                }
-                img{
-                    width:400px;
-                    display:block;
-                    margin:0 auto;
-
-                }
-                .leftparagraph h2{
-                    
-                    color:royalblue;
-                    margin:0 auto;
-                    
-                }
-                .leftparagraph p {
-                    text-align: center;
-                    font-family:monospace;
-                    color:gray;
-                }
-                .columnLeft{
-                    float:left;
-                    width:33.333%
-                }
-                .columnLeft h2{
-                    position:absolute;
-                }
-                .columnRight{
-                    float:right;
-                    width:33.333%
-
-                }
-                .columnCenter{
-                    display:inline-block;
-                    width:33.333%;
-                }
-                .columnCenter{
-                    text-align: center;
-                }
-            </style>
-            <body>      
-                <h1>Skateboarding</h1>
-                    <h2> Skaters gonna Sk8 </h2>
-                        <div class="columnLeft">
-                            <h2> What I love</h2>
+                        <div class="hopKingdomLink">
+                            <a href="https://hopking.org/hop-kingdom-2/"> See Hop Kingdom</a>
                         </div>
-                            
-                        <div class=columnCenter>
-                            <h2> insert image</h2>
-                        </div>
-                            
-                        <div class=columnRight></div>
-                            <h2> Tricks</h2>
-                    
+                    </div>
+                
+                    <img
+                        src="https://www.sbs.com.au/topics/sites/sbs.com.au.topics/files/sarah-huston_poppy-olsen-bowl-a-rama-2016_0.jpg"
+                    />
 
+                    <div class="columnRight">
+                        <h2>Tricks</h2>
+                        <h3>The tricks I <span style= color:#f25f5c> love</span>  to see!!<h3>
+                        <h3>Ollie</h3>
+                        <img src="https://media0.giphy.com/media/QN49xEumP1Vmy2RKlj/giphy.gif">
+                        <h3>Impossible</h3>
+                        <img src="https://i.pinimg.com/originals/43/4e/a5/434ea50bd2499ec424d2edcac72f70bf.gif">
+                        <h3> Nose Slide</h3>
+                        <img src="https://www.skateboardhere.com/images/bsnoseslide2.gif">
+                    </div>
+                </div>
+                <button> Find Out More!</button>
+            </div>
+            <script>
+                function findOutMore(){
+                    let name =prompt("What is your name?")
+                    let age = prompt("How old are you?")
+                    let email =prompt("Hi " + name +" what is your email address?")
+                    if(age <=17){
+                        alert("Awesome! We will be in touch 🤘")
+                    }
+                    else{
+                        alert("F*ck Yes!! We will be in touch 🤘 ")
+                    }
 
-                    
+                }
+                let button=document.querySelector("button")
+                button.addEventListener("click",findOutMore)
 
-
-                        
-
-            </body>
-        </head>
-    </html>
+            </script>
+        </body>
+	</head>
+</html>
