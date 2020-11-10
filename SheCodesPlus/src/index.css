@@ -1,7 +1,17 @@
-h1{
+body{
+    background-color:gainsboro;
+}
+    h1{
     text-align: center;
     margin:10px;
     padding: 20px;
+    position: relative;
+    top:70px;
+    font-family: 'Amatic SC', cursive;
+    letter-spacing:2px;
+    font-size:56px;
+    color:#35c2de;
+
 }
 input {
     width: 400px;
@@ -9,6 +19,9 @@ input {
     margin-left:50px;
     padding:10px; 
     border-radius: 20px;
+    position: fixed;
+    top:180px;
+    color:#523b58;
 }
 h2{
     text-align:center;
@@ -20,20 +33,40 @@ h2{
     border: solid 3px black;
     border-radius:10px;
     position: relative;
-    left: 400px;
-    top: 150px;
+    left: 650px;
+    top: 200px;
     
 }
 .days{
     margin:20px;
-    margin-left:100px;
-    margin-right:100px;
+    margin-left:350px;
+    margin-right:350px;
     padding: 10px;
-    background-color: blue;
-    color:white;
+    font-family: 'Amatic SC', cursive;
+    font-size:40px;
+    
+    
+
     position: relative;
-    top:300px;
+    top:350px;
     text-align: center;
+}
+.forecast{
+    position:relative;
+    top:400px;
+    left:40px;
+    margin:20px;
+    margin-left:300px;
+    margin-right:300px;
+    padding: 15px;
+    padding-left:15px;
+    font-family: 'Amatic SC', cursive;
+    font-size:40px;
+    background-color: hotpink;
+    
+}
+.col{
+    text-align:center;
 }
 
 
