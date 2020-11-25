@@ -33,10 +33,6 @@ let year = currentDate.getFullYear();
 let heading = document.querySelector("h3");
 heading.innerHTML = `${day} ${month} ${date}, ${year}  ${time}:${timeMin}`;
 
-// function search() {
-// 	let text = document.querySelector(`#searchBar`)
-// 	console.log(text.value)
-
 function searchBar(event) {
 	event.preventDefault();
 	let searchInput = document.querySelector("#search-text-input");
