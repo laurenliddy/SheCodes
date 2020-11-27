@@ -64,6 +64,7 @@ searchButtonIcon.addEventListener("click", searchButton);
 let search = document.querySelector("#search-bar");
 search.addEventListener("submit", searchButton);
 
+
 function showTemp(response) {
 	console.log(response);
 }
@@ -74,3 +75,11 @@ let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${cityName}&appi
 
 console.log(cityName);
 axios.get(apiUrl).then(showTemp);
+
+function showForecast(response){
+	console.log(response)
+}
+
+let forecastApi =`https://api.openweathermap.org/data/2.5/forecast?q=${cityName}&appid=${apiKey}&units=metric`
+axios.get(forecastApi).then(showForecast)
+
